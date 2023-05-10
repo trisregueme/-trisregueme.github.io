@@ -1,0 +1,25 @@
+.footer {
+    @include flex-column;
+    padding: 1.5em;
+    color: $white-color;
+    background-color: $footer-bg-color;
+    h2 {
+        font-family: 'Shrikhand', 'sans-serif';
+        font-size: 1.125em;
+        font-weight: normal;
+        margin-bottom: 0.75em;
+    }
+    &__text {
+        @include flex-row;
+        font-size: 0.875em;
+        padding: 0.25em 0;
+    }
+    &__logo {
+        &::before {
+            @include flex-row;
+            font-size: 0.85em;
+            margin-right: 0.5em;
+            width: 1.5em;
+        }
+    }
+}

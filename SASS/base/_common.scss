@@ -1,0 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    @include flex-column
+}
+
+main {
+    @include flex-column;
+}
+
+h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.875em;
+    font-weight: 400;
+}

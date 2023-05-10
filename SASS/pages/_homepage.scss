@@ -1,0 +1,59 @@
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+};
+
+.intro {
+    @include flex-column;
+};
+
+.location {
+    @include flex-row;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    background-color: $location-bg-color;
+    >p {
+        font-weight: 500;
+    }
+};
+
+.booking {
+    @include flex-column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5em 1.875em 3.5em;
+    gap: 1.55em;
+    background-color: $main-bg-color;
+    >h2 {
+        padding: 0 1em 0 1em;
+    }
+    >p {
+        font-size: 18px;
+    }
+};
+
+.functionning {
+    @include flex-column;
+    gap: 1.625em;
+    padding: 3.125em 1.25em 4.375em;
+};
+
+.fa-mobile-screen-button {
+    color: $grey-color;
+}
+
+.fa-bars {
+    @extend .fa-mobile-screen-button;
+}
+
+.fa-store {
+    color: $primary_color;
+}
+
+.restaurants {
+    @include flex-column;
+    padding: 3.5em 1.1em 4.125em;
+    background-color: $main-bg-color;
+    gap: 1.1em;
+}
