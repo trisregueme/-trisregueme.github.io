@@ -54,27 +54,27 @@ a {
 
 @font-face {
   font-family: "Shrikhand";
-  src: url(../../img_txt/police/Shrikhand-Regular.ttf) format("truetype");
+  src: url(../img_txt/police/Shrikhand-Regular.ttf) format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../../img_txt/police/Roboto-Light.ttf) format("truetype");
+  src: url(../img_txt/police/Roboto-Light.ttf) format("truetype");
   font-weight: 300;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../../img_txt/police/Roboto-Regular.ttf) format("truetype");
+  src: url(../img_txt/police/Roboto-Regular.ttf) format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../../img_txt/police/Roboto-Medium.ttf) format("truetype");
+  src: url(../img_txt/police/Roboto-Medium.ttf) format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../../img_txt/police/Roboto-Bold.ttf) format("truetype");
+  src: url(../img_txt/police/Roboto-Bold.ttf) format("truetype");
   font-weight: 700;
 }
 body {
@@ -183,6 +183,9 @@ h1 {
   z-index: 10;
   position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
 }
 
 .footer {
@@ -195,7 +198,7 @@ h1 {
 .footer h2 {
   font-family: "Shrikhand", "sans-serif";
   font-size: 1.125em;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 0.75em;
 }
 .footer__text {
