@@ -32,6 +32,8 @@
 .restaurants__card {
     @include flex-column;
     border-radius: 15px;
+    position: relative;
+    @include element-shadow;
     img {
         @include img-cover;
         object-position: 50% 60%;
@@ -61,3 +63,67 @@
         }
     }
 }
+
+.nouveau__card {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    color: $quaternary_color;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+    background-color: $tertiary_color;
+    @include element-shadow;
+}
+
+.menu__card {
+    @include flex-row;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: $white-color;
+    border-radius: 1em;
+    @include element-shadow;
+    overflow: hidden;
+    &--text {
+        @include flex-column;
+        overflow: hidden;
+        white-space: nowrap;
+        flex: 1;
+    }
+    h3 {
+        font-size: 1em;
+        font-weight: 700;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    &> p {
+        @include flex-row;
+        font-size: 1em;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-weight: 700;
+        padding-left: 0.5em;
+    }
+    &--click {
+        @include flex-row;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiary_color;
+        /*margin: -1em -5em -1em 1em;*/
+        width: 4em;
+        i {
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+            width: 1.6em;
+            height: 1.6em;
+            border-radius: 100px;
+            background: $white-color;
+            color: $tertiary_color;
+        }
+    }
+}
+

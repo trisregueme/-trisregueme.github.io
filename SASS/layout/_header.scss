@@ -1,11 +1,29 @@
 .header__title {
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 5px;
+    font-size: 1.875em;
+    padding-top: 0.5em;
+    padding-bottom: 0.17em;
     z-index: 10;
     position: relative;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
-    font-family: 'Shrikhand', sans-serif;
-    font-size: 1.875em;
-    font-weight: 400;
+}
+
+.header__menu {
+    @include flex-row;
+    align-items: center;
+    gap: 4.6em;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.10);
+    a {
+        margin-top: 0.5em;
+        margin-left: 1.5em;
+    }
+}
+
+.header__img {
+    max-height: 4em;
+    padding-top: 1.45em;
+    padding-bottom: 0.7em;
+
 }

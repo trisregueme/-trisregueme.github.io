@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    @include flex-column
+    @include flex-column;
 }
 
 main {
@@ -11,6 +11,56 @@ main {
 
 h1 {
     font-family: 'Shrikhand', sans-serif;
-    font-size: 1.875em;
     font-weight: 400;
+}
+
+.menu {
+    background-color: $main-bg-color;
+}
+
+.menu-img {
+    @include img-cover;
+    width: 100%;
+    max-height: 277px;
+}
+
+.menu__title {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em 1em 0.5em;
+    font-size: 1.75em;
+    margin-top: -2em;
+    border-radius: 1.2em 1.2em 0 0;
+    background-color: $main-bg-color;
+}
+
+.entrees {
+    padding: 0 1em;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    overflow: hidden;
+    h2 {
+        font-size: 1.2em;
+        font-weight: 400;
+        padding-bottom: 0.5em;
+        position: relative;
+        &::after {
+            content: "";
+            background: $tertiary_color;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 2.5em;
+            height: 0.2em;
+        }
+    }
+}
+
+.plats {
+    @extend .entrees;
+}
+
+.desserts {
+    @extend .entrees;
 }
