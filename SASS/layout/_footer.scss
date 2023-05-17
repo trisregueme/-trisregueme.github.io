@@ -9,16 +9,20 @@
         font-weight: 400;
         margin-bottom: 0.75em;
     }
-    &__text {
+    a {
         @include flex-row;
+        color: $white-color;
         font-size: 0.875em;
         padding: 0.25em 0;
+        i {
+            font-size: 1.2em;
+        }
     }
     &__logo {
         &::before {
             @include flex-row;
             font-size: 0.85em;
-            margin-right: 0.5em;
+            margin-right: 0.25em;
             width: 1.5em;
         }
     }

@@ -32,3 +32,8 @@ $breakpoints: (
 @mixin img-cover {
     object-fit: cover;
 };
+
+@mixin text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

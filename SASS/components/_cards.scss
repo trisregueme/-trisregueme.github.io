@@ -31,6 +31,7 @@
 
 .restaurants__card {
     @include flex-column;
+    color: black;
     border-radius: 15px;
     position: relative;
     @include element-shadow;
@@ -94,9 +95,11 @@
     h3 {
         font-size: 1em;
         font-weight: 700;
+        @include text-overflow;
     }
     p {
         font-size: 0.9em;
+        @include text-overflow;
     }
     &> p {
         @include flex-row;
@@ -105,14 +108,17 @@
         align-items: flex-end;
         font-weight: 700;
         padding-left: 0.5em;
+        margin-right: 1em;
     }
     &--click {
         @include flex-row;
         justify-content: center;
         align-items: center;
         background-color: $tertiary_color;
-        /*margin: -1em -5em -1em 1em;*/
         width: 4em;
+        margin: -1em -5em -1em 0em;
+        transition-property: margin;
+        transition-duration: 1.25s;
         i {
             @include flex-row;
             justify-content: center;
@@ -125,5 +131,9 @@
             color: $tertiary_color;
         }
     }
+    &:hover {
+        .menu__card--click {
+            margin: -1em -1em -1em 0em;
+        }
+    }
 }
-

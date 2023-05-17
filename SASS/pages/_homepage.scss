@@ -7,6 +7,10 @@ h2 {
     @include flex-column;
 };
 
+.fa-location-dot {
+    color: black;
+}
+
 .location {
     @include flex-row;
     justify-content: center;

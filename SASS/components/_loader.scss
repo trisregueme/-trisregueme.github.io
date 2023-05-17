@@ -1,0 +1,25 @@
+.loader {
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, .99);
+    z-index: 1000;
+    animation: loader;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.loader__item {
+    height: 3em;
+    width: 3em;
+    border: 5px solid #000000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: 1s infinite linear rotation;
+}

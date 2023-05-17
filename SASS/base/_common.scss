@@ -9,6 +9,12 @@ main {
     @include flex-column;
 }
 
+header {
+    i {
+        color: black;
+    }
+}
+
 h1 {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
@@ -26,13 +32,18 @@ h1 {
 
 .menu__title {
     @include flex-row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 1em 1em 0.5em;
+    position: relative;
+    padding: 1em 1em 1em 0.70em;
     font-size: 1.75em;
     margin-top: -2em;
     border-radius: 1.2em 1.2em 0 0;
     background-color: $main-bg-color;
+}
+
+.menu__heart {
+    position: absolute;
+    top: 1.2em;
+    right: 0.8em;
 }
 
 .entrees {
@@ -40,6 +51,8 @@ h1 {
     margin-bottom: 1.5em;
     max-width: 100%;
     overflow: hidden;
+    animation: 1.7s 1 normal slidein;
+    animation-delay: .3s;
     h2 {
         font-size: 1.2em;
         font-weight: 400;
@@ -59,8 +72,24 @@ h1 {
 
 .plats {
     @extend .entrees;
+    animation-delay: .65s;
 }
 
 .desserts {
     @extend .entrees;
+    animation-delay: 1s;
+}
+
+.colored--heart {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    &:hover {
+        opacity: 1;
+    }
+    &::before {
+    background-image: linear-gradient(to top,$primary_color,$secondary_color);
+    background-clip: text;
+    color: transparent;
+    }
 }

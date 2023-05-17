@@ -1,0 +1,29 @@
+@keyframes slidein {
+    from {
+        margin-left: 10em;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0em;
+        opacity: 1;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: -10;
+    }
+}
