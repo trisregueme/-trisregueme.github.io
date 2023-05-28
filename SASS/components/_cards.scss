@@ -3,6 +3,7 @@
     @include element-shadow;
     align-items: center;
     position: relative;
+    flex: 1;
     margin-left: 0.8em;
     padding: 1.625em ;
     line-height: 1.25em;
@@ -80,7 +81,7 @@
 
 .menu__card {
     @include flex-row;
-    margin: 1em 0;
+    margin: 1em 0 1em 0;
     padding: 1em;
     background-color: $white-color;
     border-radius: 1em;
@@ -135,5 +136,8 @@
         .menu__card--click {
             margin: -1em -1em -1em 0em;
         }
+    }
+    @include desktop {
+        width: 635px;
     }
 }
