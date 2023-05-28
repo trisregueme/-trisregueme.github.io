@@ -57,11 +57,11 @@ h1 {
 }
 
 .entrees {
+    animation: 1.2s 1 normal slidein;
+    animation-delay: 0s;
     padding: 0 1em 1em 1em;
     margin: auto;
     overflow: hidden;
-    animation: 1.7s 1 normal slidein;
-    animation-delay: .3s;
     h2 {
         font-size: 1.2em;
         font-weight: 400;
@@ -81,12 +81,12 @@ h1 {
 
 .plats {
     @extend .entrees;
-    animation-delay: .65s;
+    animation-delay: .15s;
 }
 
 .desserts {
     @extend .entrees;
-    animation-delay: 1s;
+    animation-delay: 0.3s;
 }
 
 .colored--heart {

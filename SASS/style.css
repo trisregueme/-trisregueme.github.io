@@ -1,3 +1,30 @@
+@keyframes slidein {
+  from {
+    padding-left: 10em;
+    opacity: 0;
+  }
+  to {
+    padding-left: 1em;
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -140,11 +167,11 @@ h1 {
 }
 
 .entrees, .desserts, .plats {
+  animation: 1.2s 1 normal slidein;
+  animation-delay: 0s;
   padding: 0 1em 1em 1em;
   margin: auto;
   overflow: hidden;
-  animation: 1.7s 1 normal slidein;
-  animation-delay: 0.3s;
 }
 .entrees h2, .desserts h2, .plats h2 {
   font-size: 1.2em;
@@ -163,11 +190,11 @@ h1 {
 }
 
 .plats {
-  animation-delay: 0.65s;
+  animation-delay: 0.15s;
 }
 
 .desserts {
-  animation-delay: 1s;
+  animation-delay: 0.3s;
 }
 
 .colored--heart {
@@ -212,33 +239,6 @@ h1 {
   animation: 1s infinite linear rotation;
 }
 
-@keyframes slidein {
-  from {
-    padding-left: 10em;
-    opacity: 0;
-  }
-  to {
-    padding-left: 1em;
-    opacity: 1;
-  }
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 .main-btn, .commander__menu-btn {
   max-width: 220px;
   color: #FFF;
